@@ -1,0 +1,22 @@
+{
+    "stagingMethod": "ssh",
+    "staging": "10.176.32.5",
+    "stagingUser": "ubuntu",
+    "buildDir": "/u/tBuilds",
+    "baseName": "HPCCSystemsVM-amd64",
+    "packageBase": "hpccsystems-platform_community",
+    "packagePost": "precise_amd64.deb",
+    "replace":{
+        "{{NAME}}": "name",
+        "{{PACKAGE}}": "package",
+        "{{VERSION}}": "version"
+    },
+    "templates": [
+        "build.sh.in",
+        "provision.sh.in",
+        "amd64/Vagrantfile.in"
+    ],
+    "extra_templates": [
+        { "packages": "amd64/Vagrantfile.in" }
+    ]
+}
