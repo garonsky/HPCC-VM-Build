@@ -1,6 +1,8 @@
 VMBuild
 =======
 
+!!! This project is replaced with VMBuild !!!
+
 This application facilitates the creation of a ova based virtal machine.
 
 Requirements
